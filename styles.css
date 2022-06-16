@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 100%;
+  background-color: rgb(34, 29, 29);
+  padding: 10px;
+  border-radius: 0 15px 15px 0;
+}
+.sidebar h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
