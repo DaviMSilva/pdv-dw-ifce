@@ -57,7 +57,7 @@
                         <div class="card-body" align="center">
                             <img src="https://cdn-icons-png.flaticon.com/512/114/114903.png" alt="Lista de produtos" height="225px" width="245px">
                             <br><br>
-                            <a href="#" class="btn btn-primary">Lista de Produtos</a>
+                            <a href="listar_produtos.php" class="btn btn-primary">Lista de Produtos</a>
                         </div>
                     </div>
                     <div class="card col-md-6" style="width: 20rem;">
@@ -73,7 +73,7 @@
                         <div class="card-body" align="center">
                             <img src="https://cdn-icons.flaticon.com/png/512/1950/premium/1950630.png?token=exp=1656194526~hmac=dc46688210456cf9a9b5eca33b22ffa8" alt="Lista de empresas" height="225px" width="245px">
                             <br><br>
-                            <a href="lista_fornecedor.php" class="btn btn-primary">Lista de Fornecedores</a>
+                            <a href="listar_fornecedores.php" class="btn btn-primary">Lista de Fornecedores</a>
                         </div>
                     </div>
                     <div class="card col-md-6" style="width: 20rem;">

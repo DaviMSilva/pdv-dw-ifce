@@ -26,6 +26,7 @@
         }
 
         public function alteraFornecedor(Fornecedor $fornecedor) {
+            $id = mysqli_real_escape_string($this->conexao, $fornecedor->getId());
             $nome =  mysqli_real_escape_string($this->conexao, $fornecedor->getNome());
             $cnpj = mysqli_real_escape_string($this->conexao, $fornecedor->getCnpj());
             $razaoSocial = mysqli_real_escape_string($this->conexao, $fornecedor->getRazaoSocial());
@@ -39,8 +40,9 @@
             $cep = mysqli_real_escape_string($this->conexao, $fornecedor->getCep());
             $telefone = mysqli_real_escape_string($this->conexao, $fornecedor->getTelefone());
 
-            $query = "UPDATE fornecedor SET nome = '{$nome}', cnpj = '{$cnpj}', razao_social = '{$razaoSocial}', email = '{$email}', rua = '{$rua}', numero = {$numero}, estado = '{$estado}', cidade = '{$cidade}', bairro = '{$bairro}', complemento = '{$complemento}', cep = {$cep}, telefone = '{$telefone}' WHERE id = '{$id}'";
-            
+            $query = "UPDATE fornecedor SET nome = '{$nome}', cnpj = '{$cnpj}', razao_social = '{$razaoSocial}', email = '{$email}', rua = '{$rua}', numero = {$numero}, estado = '{$estado}', cidade = '{$cidade}', bairro = '{$bairro}', complemento = '{$complemento}', cep = '{$cep}', telefone = '{$telefone}' WHERE id = '{$id}'";
+           
+            return mysqli_query($this->conexao, $query);
     }
     public function listaFornecedor() {
         $fornecedors = array();
